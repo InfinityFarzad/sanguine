@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "sanguine",
+	"version": "${version}",
+	"name": "Sanguine",
+	"description": "A mod that adds Vampires",
+	"authors": [
+		"R3ck",
+		"KindlingCinder",
+		"juko_lul",
+		"eyalego",
+		"InfinityFarzad"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/sanguine",
+		"sources": "https://github.com/InfinityFarzad/Sanguine"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sanguine/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.sanguine.dev.common.Sanguine"
+		],
+		"fabric-datagen": [
+			"org.sanguine.dev.datagen.SanguineDataGenerator"
+		],
+		"client": [
+			"org.sanguine.dev.client.SanguineClient"
+		]
+	},
+	"mixins": [
+		"sanguine.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
