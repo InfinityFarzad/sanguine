@@ -12,6 +12,7 @@ public class Sanguine implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		LOGGER.info("CindlingKinder");
 	}
 
 	public static Identifier id(String path) {
