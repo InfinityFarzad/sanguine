@@ -6,6 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 import org.sanguine.dev.common.Sanguine;
+import org.sanguine.dev.common.component.SanguineBloodComponent;
 import org.sanguine.dev.common.item.SyringeItem;
 
 import java.util.function.Function;
@@ -14,7 +15,7 @@ public interface SanguineItems {
 
     /* items */
 
-    Item SYRINGE = register("syringe", SyringeItem::new);
+    Item SYRINGE = register("syringe", SyringeItem::new, new Item.Properties().component(SanguineComponents.BLOOD_TYPE, SanguineBloodComponent.EMPTY));
 
 
     /* - registry and helper methods - */
